@@ -1,4 +1,6 @@
-﻿using Wisej.Web;
+﻿using System.Collections.Generic;
+using System.Windows.Forms;
+using Wisej.Web;
 
 namespace WisejProjectJulieBodette
 {
@@ -7,6 +9,12 @@ namespace WisejProjectJulieBodette
         public Page1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, System.EventArgs e)
+        {
+            Database databaseObject = new Database();
+            AlertBox.Show("wow look message");
         }
     }
 }
